@@ -1,0 +1,1 @@
+document.querySelector('.elementClass').style.backgroundColor = 'blue';

@@ -1,0 +1,1 @@
+document.getElementById('imageID').setAttribute('src', 'newImageSource.jpg');

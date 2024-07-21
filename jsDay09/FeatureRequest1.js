@@ -1,0 +1,1 @@
+document.getElementById('elementID').textContent = 'Changed Text Content';

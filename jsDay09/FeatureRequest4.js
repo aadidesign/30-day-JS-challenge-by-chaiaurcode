@@ -1,0 +1,1 @@
+document.getElementById('elementID').setAttribute('attributeName', 'newValue');
