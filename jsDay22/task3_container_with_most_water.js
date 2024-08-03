@@ -8,5 +8,5 @@ function maxArea(height) {
     if (height[l] < height[r]) l++;
     else r--;
   }
-  return maxarea;
+  return maxarea; 
 }
