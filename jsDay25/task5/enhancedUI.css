@@ -1,0 +1,41 @@
+/* Enhanced UI with more styles and transitions */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+#app {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+#app:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.movie-result {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.movie-result:hover {
+    transform: scale(1.02);
+}
+
+.movie-result img {
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    flex: 1;
+    margin-left: 20px;
+}
