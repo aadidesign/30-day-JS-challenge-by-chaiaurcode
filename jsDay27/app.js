@@ -2,7 +2,7 @@ let tasks = [];
 
 document.getElementById('task-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const title = document.getElementById('title').value;
     const description = document.getElementById('description').value;
     const dueDate = document.getElementById('due-date').value;
