@@ -46,6 +46,7 @@ function displayTasks() {
         taskItem.appendChild(taskButtons);
 
         taskList.appendChild(taskItem);
+
     });
 }
 
