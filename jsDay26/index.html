@@ -8,11 +8,18 @@
 </head>
 <body>
     <div id="chat-container">
-        <div id="chat-window"></div>
-        <input type="text" id="username" placeholder="Enter your username" />
-        <input type="text" id="message" placeholder="Type a message" />
-        <button id="send-btn">Send</button>
+        <header>
+            <h1>Chat Application</h1>
+        </header>
+        <main>
+            <div id="chat-window"></div>
+            <div id="input-container">
+                <input type="text" id="username" placeholder="Enter your username" aria-label="Username">
+                <input type="text" id="message" placeholder="Type a message" aria-label="Message">
+                <button id="send-btn">Send</button>
+            </div>
+        </main>
     </div>
-    <script src="client.js"></script>
+    <script src="client.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,243 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #004d40;
+}
+
+main {
+    padding: 20px;
+}
+
+#search-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-filter input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#search-filter button {
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-filter button:hover {
+    background-color: #004d40;
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.product-card img:hover {
+    opacity: 0.8;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hidden {
+    display: none;
+}
+
+#shopping-cart, #checkout {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shopping-cart div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkout input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#checkout button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#checkout button:hover {
+    background-color: #003d34;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .product-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark-mode #shopping-cart, .dark-mode #checkout {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode #search-filter input, .dark-mode #checkout input {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.notification.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.notification button {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.notification button:hover {
+    background-color: #003d34;
+}
+
+
+
+button {
+    background-color: #00796b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Round corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+}
+
+button:hover {
+    background-color: #004d40; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:active {
+    background-color: #00332d; /* Even darker background on click */
+    transform: scale(1); /* Return to original size */
+}
+
+/* Specific styling for Add to Cart buttons */
+.add-to-cart-button {
+    background-color: #ff5722; /* Unique color for Add to Cart button */
+}
+
+.add-to-cart-button:hover {
+    background-color: #e64a19; /* Darker color on hover */
+}
+
+.add-to-cart-button:active {
+    background-color: #d84315; /* Even darker color on click */
+}

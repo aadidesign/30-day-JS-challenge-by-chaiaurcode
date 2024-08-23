@@ -7,18 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Social Media Dashboard</h1>
-    <div id="login-form">
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="login()">Login</button>
+    <div id="container">
+        <header>
+            <h1>Social Media Dashboard</h1>
+            <nav>
+                <button id="logout-btn" class="nav-btn hidden">Logout</button>
+                <button id="delete-account-btn" class="nav-btn hidden">Delete Account</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="auth-forms" class="form-container">
+                <div id="login-form" class="form">
+                    <h2>Login</h2>
+                    <input type="text" id="login-username" placeholder="Username">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <button id="login-btn">Login</button>
+                    <p>Don't have an account? <button id="show-register" class="link-btn">Register</button></p>
+                    <p><button id="show-forgot-password" class="link-btn">Forgot Password?</button></p>
+                </div>
+
+                <div id="register-form" class="form hidden">
+                    <h2>Register</h2>
+                    <input type="text" id="register-username" placeholder="Username">
+                    <input type="password" id="register-password" placeholder="Password">
+                    <button id="register-btn">Register</button>
+                    <p>Already have an account? <button id="show-login" class="link-btn">Login</button></p>
+                    <input type="email" id="register-email" placeholder="Email">
+
+                </div>
+
+                <div id="forgot-password-form" class="form hidden">
+                    <h2>Forgot Password</h2>
+                    <input type="text" id="forgot-username" placeholder="Username">
+                    <button id="reset-password-btn">Reset Password</button>
+                    <p>Remember your password? <button id="show-login-from-forgot" class="link-btn">Login</button></p>
+                    <input type="email" id="forgot-email" placeholder="Email">
+
+                </div>
+            </div>
+
+            <div id="dashboard" class="hidden">
+                <section id="create-post" class="form">
+                    <textarea id="post-content" placeholder="What's on your mind?" rows="4"></textarea>
+                    <button id="post-btn">Post</button>
+                </section>
+
+                <section id="posts-feed"></section>
+
+                <section id="user-list" class="form hidden">
+                    <h2>Users</h2>
+                    <ul id="users"></ul>
+                    <button id="back-to-users" class="nav-btn">Back</button>
+                </section>
+
+                <section id="view-user-posts" class="form hidden">
+                    <h2>User Posts</h2>
+                    <div id="user-posts-feed"></div>
+                    <button id="back-to-posts" class="nav-btn">Back to Posts</button>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Social Media Dashboard</p>
+        </footer>
     </div>
-    <div id="create-post" style="display: none;">
-        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
-        <input type="file" id="post-image">
-        <button onclick="createPost()">Post</button>
-    </div>
-    <div id="posts-feed"></div>
+
     <script src="scripts.js"></script>
 </body>
 </html>

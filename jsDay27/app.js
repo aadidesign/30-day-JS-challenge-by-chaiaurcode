@@ -3,15 +3,16 @@ let tasks = [];
 document.getElementById('task-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const title = document.getElementById('title').value;
-    const description = document.getElementById('description').value;
+    const title = document.getElementById('title').value.trim();
+    const description = document.getElementById('description').value.trim();
     const dueDate = document.getElementById('due-date').value;
 
-    const task = { title, description, dueDate };
-    tasks.push(task);
-
-    displayTasks();
-    this.reset();
+    if (title && dueDate) {
+        const task = { title, description, dueDate };
+        tasks.push(task);
+        displayTasks();
+        this.reset();
+    }
 });
 
 function displayTasks() {
@@ -46,7 +47,6 @@ function displayTasks() {
         taskItem.appendChild(taskButtons);
 
         taskList.appendChild(taskItem);
-
     });
 }
 
