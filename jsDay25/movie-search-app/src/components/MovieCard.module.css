@@ -1,0 +1,76 @@
+/* Mobile-first default styles */
+.movieCard {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movieCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .poster {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .releaseDate {
+    font-size: 14px;
+    color: #777;
+    margin: 0 10px 10px 10px;
+  }
+  
+  .moreInfoButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .moreInfoButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media queries for larger screens */
+  @media (min-width: 600px) {
+    .movieCard {
+      max-width: 48%;
+      margin: 1%;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .releaseDate {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .movieCard {
+      max-width: 30%;
+      margin: 1.5%;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .releaseDate {
+      font-size: 18px;
+    }
+  }
+  

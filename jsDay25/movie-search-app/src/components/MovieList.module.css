@@ -1,0 +1,21 @@
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Media queries for different screen sizes */
+  @media (min-width: 600px) {
+    .movieList {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .movieList {
+      justify-content: flex-start;
+    }
+  }
+  
