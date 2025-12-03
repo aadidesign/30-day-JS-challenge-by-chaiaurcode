@@ -1,6 +1,7 @@
-function greet(name, age = 18) {
-    return `Hello ${name}, you are ${age} years old.`;
-}
+const greet = (name, age=18) => `Hello ${name}! You're ${age}'s old.`;
+// function greet(name, age = 18) {
+//     return `Hello ${name}, you are ${age} years old.`;
+// }
 
 // Case 1: All arguments provided
 console.log(greet("Alice", 25)); 
