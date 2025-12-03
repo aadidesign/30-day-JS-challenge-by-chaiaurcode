@@ -1,0 +1,15 @@
+The Old Way (ES5):
+
+const sum = function(a, b) {
+    return a + b; // You MUST type 'return'
+};
+
+
+
+New Way (ES6 Arrow):
+
+const sum = (a, b) => a + b; 
+
+// 1. No 'function' keyword
+// 2. No curly braces {}
+// 3. No 'return' keyword (It is automatic)
