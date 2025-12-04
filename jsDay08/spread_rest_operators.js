@@ -2,7 +2,7 @@
 // Activity 3: Spread and Rest Operators
 // Task 5
 const existingArray = [1, 2, 3];
-const newArray = [...existingArray, 4, 5, 6];
+const newArray = [...existingArray, 4, 5, 6];         //To merge Arrays
 console.log(newArray);
 
 // Task 6
