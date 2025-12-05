@@ -1,4 +1,4 @@
-async function asyncFunction1() {
+async function asyncFunction1(){
     const promise = new Promise((resolve) => {
         setTimeout(() => resolve('Resolved promise'), 2000);
     });
