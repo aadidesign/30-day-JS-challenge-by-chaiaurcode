@@ -6,8 +6,6 @@ class ValidationError extends Error {
     }
 }
 
-
-
 function validateInput(input) {
     try {
         if (input.trim() === "") {
