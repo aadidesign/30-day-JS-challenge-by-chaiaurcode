@@ -1,7 +1,7 @@
 
 // Task 6
 const itemModule = (function() {
-    let items = [];
+    let items = ['mango'];
     return {
         addItem: function(item) {
             items.push(item);
