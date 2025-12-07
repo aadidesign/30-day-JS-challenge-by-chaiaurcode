@@ -8,6 +8,9 @@ function uniqueIdGenerator() {
     };
 }
 const generateId = uniqueIdGenerator();
+
+console.log(generateId());
+console.log(generateId());
 console.log(generateId());
 console.log(generateId());
 
